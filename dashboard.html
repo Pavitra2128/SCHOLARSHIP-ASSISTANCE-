@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #4caf50;
+            color: #fff;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .search-students {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            margin-left: 300px;
+            margin-top: 150px;
+        }
+
+        .button {
+            background-color: #4caf50;
+            color: #f2f2f2;
+            width: 100px;
+            height: 100px;
+            margin-left: 50px;
+        }
+
+        .quote-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 24px;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="#profile">Profile</a>
+    <a href="home.html">Log Out</a>
+</div>
+
+<div class="content">
+    <h2>Dashboard</h2>
+    <div class="search-students">
+        <a class="button" href="display.php">Search Students</a>
+    </div>
+
+    <div class="quote-container">
+        <p class="quote">" Your support is the foundation upon which dreams are built"</p>
+    </div>
+</div>
+</body>
+</html>

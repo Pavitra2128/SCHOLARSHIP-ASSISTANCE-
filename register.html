@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scholarship Application</title>
+<link rel="stylesheet" href="register.css">
+<style >
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    margin: 20px auto;
+  }
+  
+  .sidebar {
+    flex: 0.5;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    border: none;
+    margin-top: 8px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    margin-bottom: 10px;
+  }</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Scholarship Program</h2>
+    <p>Apply for a scholarship and unlock your potential!</p>
+  </div>
+  <div class="form-container">
+    <h2>Scholarship Application</h2>
+    <form action="register.php" method="post">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+      <label for="school">School/University:</label>
+      <input type="text" id="school" name="school" required>
+
+      <label for="major">Major/Field of Study:</label>
+      <input type="text" id="major" name="major" required>
+
+      <label for="currentGPA">Current GPA:</label>
+      <input type="text" id="currentGPA" name="currentGPA" required>
+
+      <label for="prevYearCGPA">Previous Year CGPA:</label>
+      <input type="text" id="prevYearCGPA" name="prevYearCGPA" required>
+
+      <label for="reason">Why do you deserve this scholarship?</label>
+      <textarea id="reason" name="reason" required></textarea>
+
+     <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="incomeCertificate">Upload Income Certificate:</label>
+            <input type="file" id="incomeCertificate" name="incomeCertificate" accept=".pdf, .doc, .docx" required>
+      <label for="academicDetails">Academic Details:</label>
+      <label for="institution">Institution Name:</label>
+<input type="text" id="institution" name="institution" required>
+
+<label for="stream">Stream:</label>
+<input type="text" id="stream" name="stream" required>
+
+<label for="state">State:</label>
+<input type="text" id="state" name="state" required>
+
+<label for="district">District:</label>
+<input type="text" id="district" name="district" required>
+
+<label for="passingYear">Passing Year:</label>
+<input type="text" id="passingYear" name="passingYear" required>
+
+<label for="marksObtained">Marks Obtained:</label>
+<input type="text" id="marksObtained" name="marksObtained" required>
+
+<label for="totalMarks">Total Marks:</label>
+<input type="text" id="totalMarks" name="totalMarks" required>
+
+      <label for="applicationReason">Reasons for wanting this scholarship:</label>
+      <textarea id="applicationReason" name="applicationReason" required></textarea>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <div>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" required>
+          Male
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" required>
+          Female
+        </label>
+      </div>
+
+      <input type="submit" value="Apply for Scholarship">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
